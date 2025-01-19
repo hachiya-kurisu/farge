@@ -8,7 +8,7 @@ MANDIR ?= /share/man
 all: farge
 
 farge: farge.c
-	${CC} -Os -Wall -pedantic -static -o farge farge.c
+	${CC} -Os -Wall -pedantic -o farge farge.c
 
 install:
 	install farge ${DESTDIR}${PREFIX}/bin/farge

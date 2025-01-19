@@ -111,7 +111,7 @@ void farge(FILE *rd, FILE *wr, int mode) {
   printf("\n");
 }
 
-int usage() {
+int usage(void) {
   printf("farge [-hnpw] [file ...]\n");
   return 0;
 }
