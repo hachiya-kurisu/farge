@@ -13,6 +13,10 @@ farge: farge.c
 install:
 	install farge ${DESTDIR}${PREFIX}/bin/farge
 
+push:
+	got send
+	git push github
+
 again: clean farge
 
 clean:
