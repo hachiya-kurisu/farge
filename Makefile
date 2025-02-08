@@ -17,7 +17,15 @@ push:
 	got send
 	git push github
 
+README.md: README.gmi
+	sisyphus -a "." -f markdown <README.gmi >README.md
+
+doc: README.md
+
 again: clean farge
 
 clean:
 	rm -f farge
+
+release: push
+	git push github --tags
